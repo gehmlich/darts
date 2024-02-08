@@ -1,0 +1,134 @@
+* {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+/* Import Roboto font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+.board,
+.table {
+  float: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  width: 500px;
+}
+
+.table {
+  width: calc(100% - 500px);
+}
+
+.board svg {
+  height: 500px;
+  width: 500px;
+}
+
+.table table {
+  border-collapse: collapse;
+  float: left;
+  margin: 0 0.5%;
+  margin-top: 10px;
+  text-align: center;
+  width: 49%;
+
+  .break {
+    background: black;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#dartboard #areas g path:hover,
+#dartboard #areas g circle:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%; /* Adjust table width as needed */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif; /* Apply Roboto font */
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+}
+
+thead {
+  background-color: #2196f3; /* Material Design primary color */
+  color: #fff; /* White text color */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* 
+    Custom player colors 
+*/
+.player-one thead {
+  background-color: #4f9962; /* Green */
+}
+
+.player-two thead {
+  background-color: #ed3737; /* Orange */
+}
+
+.player-one tbody tr:nth-child(even) {
+  background-color: #e8f5e9; /* Light green */
+}
+
+.player-two tbody tr:nth-child(even) {
+  background-color: #fbe9e7; /* Light red */
+}
+
+.player-one tbody tr:hover {
+  background-color: #c8e6c9; /* Hover green */
+}
+
+.player-two tbody tr:hover {
+  background-color: #ffccbc; /* Hover orange */
+}
+/*
+    Start game button
+*/
+.new-game {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.new-game:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
